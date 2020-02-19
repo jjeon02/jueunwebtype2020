@@ -1,3 +1,7 @@
-function owlFunction() {
-    document.getElementById("owlDIV").innerHTML = 'OwO OvO OwO OvO';
-  }
+function setup(){
+  noCanvas();
+}
+
+function green() {
+    background(208,255,231);
+}
