@@ -1,5 +1,6 @@
 html{
     background: linear-gradient(180deg, rgba(255,199,199,1) 0%, rgba(245,241,189,1) 32%, rgba(208,255,235,1) 69%, rgba(186,202,255,1) 100%);
+    scroll-behavior: smooth;
 }
 .grid{
     display:grid;
@@ -31,13 +32,13 @@ img{
 }
 
 h2{
-    animation: titleappears 0.8s linear;
     font-family: 'Merriweather', serif;
     text-indent: 10px;
     font-size:1em;
     line-height:1.2;
     border: none;
     margin-bottom: 1.2em;
+    animation: appears 1s linear;
 }
 h3{
     letter-spacing: 0.5px;
@@ -69,8 +70,27 @@ a:visited{
     text-align:center;
     margin: 50px 0 50px 0
 }
+/* TITLE */
+/* #icon{
+    animation: appears 0.4s linear;
+}
+#titleone{
+    animation: appears 0.5s linear;
+}
+#titletwo{
+    animation: appears 0.6s linear;
+}
+#titlethree{
+    animation: appears 0.7s linear;
+}
+#titlefour{
+    animation: appears 0.8s linear;
+}
+#titlefive{
+    animation: appears 0.9s linear;
+} */
 
-
+/* TEXT */
 #owl{
     width:96%;
     animation: appears 1s linear;
@@ -95,7 +115,7 @@ a:visited{
 @keyframes appears{
     0%{
         opacity:0;
-        transform:translateY(30px);
+        transform:translateY(20px);
     }
     100%{
         opacity:1;
@@ -103,13 +123,3 @@ a:visited{
     }
 }
 
-@keyframes titleappears{
-    0%{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    100%{
-        opacity:1;
-        transform:translateY(0px);
-    }
-}
