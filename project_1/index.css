@@ -1,0 +1,36 @@
+.grid{
+    display:grid;
+    grid-template-columns: 30% 1fr;
+    width:100%;
+}
+.container{
+    display:inline-block;
+}
+.index{
+    display:inline-block;
+}
+h1{
+    font-family:helvetica;
+    font-size:1.2em;
+    line-height:0.8;
+    margin-bottom: 3.6em;
+    color:#0000A8;
+}
+button{
+    font-family: 'Merriweather', serif;
+    font-size:1.2em;
+    line-height:1.2;
+    color:#0000A8;
+    background: rgba(0,0,0,0);
+    border: none;
+    margin-bottom: 1.2em;
+}
+button:active{
+    border: none;
+    text-decoration:underline;
+}
+.text{
+    font-family: 'Merriweather', serif;
+    font-size: 2.4em;
+    color:#0000A8;
+}
