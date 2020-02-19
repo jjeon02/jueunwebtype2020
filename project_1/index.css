@@ -20,18 +20,21 @@ html{
     height:100%;
     margin:0px;
 }
-h1{
-    font-family:'Helvetica', sans-serif;
-    text-indent: 10px;
-    font-size:1.2em;
-    line-height:0.8;
-    margin-bottom: 3.6em;
-    color:#0000A8;
+.icon{
+    margin: 30px 0px 20px 10px;
+    width:3.6em;
+    animation: appears 1s linear;
 }
+img{
+    display:inline-block;
+    width:100%;
+}
+
 h2{
+    animation: titleappears 0.8s linear;
     font-family: 'Merriweather', serif;
     text-indent: 10px;
-    font-size:1.2em;
+    font-size:1em;
     line-height:1.2;
     border: none;
     margin-bottom: 1.2em;
@@ -57,7 +60,7 @@ a{
 }
 a:hover{
     color:white;
-    background-color:black;
+    background-color:#F257FF;
 }
 a:visited{
     color:#0000A8;
@@ -69,22 +72,44 @@ a:visited{
 
 
 #owl{
-    /* background-color:#F5BDC7; */
     width:96%;
+    animation: appears 1s linear;
 }
 #class{
-    /* background-color:#F5F1BD; */
     width:96%;
+    animation: appears 1s linear;
 }
 #book{
-    /* background-color:#D0FFE7; */
     width:96%;
+    animation: appears 1s linear;
 }
 #booktwo{
     width:96%;
-    /* background-color:#BDE6F5; */
+    animation: appears 1s linear;
 }
 #designer{
     width:96%;
-    /* background-color:#BACAFF; */
+    animation: appears 1s linear;
+}
+
+@keyframes appears{
+    0%{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+@keyframes titleappears{
+    0%{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
 }
