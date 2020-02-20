@@ -31,19 +31,19 @@ html{
 h1{
     font-family:'Courier New', Courier, monospace;
     font-size: 5rem;
-    margin: 100px 100px 100px 1.2em; 
+    margin: 100px 100px 100px 1.4em; 
 }
 h2{
     font-family:'Courier New', Courier, monospace;
     font-size: 1.8rem;
-    margin: 50px 100px 50px 1em;
+    margin: 50px 100px 50px 2em;
     text-transform:uppercase;
 }
 h3{
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 1.8rem;
-    margin: 50px 100px 50px 3em;
+    margin: 50px 100px 50px 4em;
 }
 p{
     font-family:'Courier New', Courier, monospace;
