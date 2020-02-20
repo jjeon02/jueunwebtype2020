@@ -1,6 +1,5 @@
 html{
-    background: linear-gradient(180deg, rgba(255,199,199,1) 0%, rgba(208,255,235,1) 43%, rgba(206,253,236,1) 60%, rgba(189,230,245,1) 100%);
-    /* background: linear-gradient(180deg, rgba(255,199,199,1) 0%, rgba(245,241,189,1) 32%, rgba(208,255,235,1) 69%, rgba(186,202,255,1) 100%); */
+    background: linear-gradient(180deg, rgba(255,199,199,1) 0%, rgba(208,255,235,1) 43%, rgba(206,253,236,1) 60%, rgba(189,230,245,1) 100%) ;
     scroll-behavior: smooth;
 }
 .grid{
