@@ -32,27 +32,42 @@ html{
 
 h1{
     font-family:'Courier New', Courier, monospace;
-    font-size: 5rem;
+    font-size: calc(30px + 4vw);
     margin: 100px 100px 100px 1.4em; 
 }
 h2{
     font-family:'Courier New', Courier, monospace;
-    font-size: 1.8rem;
+    font-size: calc(18px + 1vw);
     margin: 50px 100px 50px 2em;
     text-transform:uppercase;
 }
 h3{
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: calc(18px + 1vw);
     margin: 50px 100px 50px 4em;
 }
 p{
     font-family:'Courier New', Courier, monospace;
-    font-size: 1.8rem;
+    font-size: calc(18px + 1vw);
     margin: 50px 100px 50px 6em;
     line-height:1.2em;
 }
 .name{
     text-transform:uppercase;
 }
+/* 
+@media screen and (max-width: 600px) {
+    h1 {
+       font-size: 48px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    p{
+        font-size: 24px;
+    }
+  } */
