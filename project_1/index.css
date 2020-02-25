@@ -60,14 +60,15 @@ details summary::-webkit-details-marker {
     font-size: 1.6em;
     line-height: 1.2em;
     right: 0;
-    margin-left: 8em;
+    margin-left: 16%;
     animation: appears 0.5s linear;
     padding: 5px 0 5px 0;
-    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .insection{
-    margin-left: 14.2em;
+    width:100%;
+    margin-left: 16%;
     padding: 2em;
     animation: appears 0.5s linear;
     right:0;
