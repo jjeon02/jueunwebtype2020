@@ -34,42 +34,43 @@ details summary::-webkit-details-marker {
 
 /* CLASS/ID */
 .bigtitle{
-    font-size: 1.6em;
-    line-height: 1.4em;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
     font-family:'helvetica', serif;
     font-weight:bold;
     text-transform: uppercase;
+    padding: 5px 0 5px 0;
     animation: appears 0.5s linear;
     border-bottom: 1px solid black;
+    width: 100%;
+    right:0;
 }
 
 .des{
     font-family: 'Libre Baskerville';
-    font-size: 1.6em;
-    line-height: 1.4em;
-    margin-left: 8em;
-    padding:1em;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding:1rem;
     animation: appears 0.5s linear;
+}
+.content{
+    display: block;
+    margin-left: 8em;
+    right: 0px;
 }
 
 .section{
     text-transform: uppercase;
     display:inline-block;
-    width:100%;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
-    font-size: 1.6em;
-    line-height: 1.2em;
-    right: 0;
-    margin-left: 16%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
     animation: appears 0.5s linear;
     padding: 5px 0 5px 0;
     border-bottom: 1px solid black;
 }
 
 .insection{
-    width:100%;
-    margin-left: 16%;
-    padding: 2em;
     animation: appears 0.5s linear;
     right:0;
 }
@@ -77,6 +78,7 @@ details summary::-webkit-details-marker {
 #grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
+    margin: 3em;
 }
 
 .grid{
@@ -86,13 +88,13 @@ details summary::-webkit-details-marker {
 
 .container{
     display:inline-block;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .title{
     top:0;
-    font-size: 1.6em;
-    line-height: 1.4em;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
     font-style: italic;
     font-family:'helvetica', serif;
     font-weight:bold;
@@ -101,22 +103,25 @@ details summary::-webkit-details-marker {
 }
 .subtitle{
     top:0;
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1.4rem;
+    line-height: 2rem;
     font-family: 'Libre Baskerville';
     font-weight:normal;
     margin-bottom:0;
 }
 .text{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
-    font-size: 1.6em;
-    line-height: 1.4em;
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
-li{
-    font-family: 'Libre Baskerville';
+{
+    font-family: 'helvetica';
+    font-size: 1.6rem;
+    line-height: 2rem;
     font-weight:bold;
     bottom:0;
     margin-bottom: 0;
+    padding-bottom:0;
     margin-top:0;
 }
 
@@ -157,14 +162,20 @@ li{
 /* RESPONSIVE */
 
 @media only screen and (max-width: 720px) {
-
+    .content{
+        margin-left:0;
+        width: 100%;
+        right:0;
+    }
     .des{
         margin-left: 0;
     }
     .section{
+        width: 100%;
         margin-left: 0;
     }
     .insection{
+        width: 100%;
         margin-left: 0;
     }
     .grid{
@@ -174,9 +185,9 @@ li{
         display:inline-block;
     }
     .container{
+        display:block;
         margin:auto;
-        padding:auto;
-        width:100%;
+        padding:2rem;
     }
     .img{
         width:100%;
