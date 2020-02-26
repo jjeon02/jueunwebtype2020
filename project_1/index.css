@@ -78,7 +78,7 @@ details summary::-webkit-details-marker {
 #grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin: 3em;
+    padding:0;
 }
 
 .grid{
@@ -114,7 +114,7 @@ details summary::-webkit-details-marker {
     font-size: 1.6rem;
     line-height: 2rem;
 }
-{
+/* {
     font-family: 'helvetica';
     font-size: 1.6rem;
     line-height: 2rem;
@@ -123,7 +123,7 @@ details summary::-webkit-details-marker {
     margin-bottom: 0;
     padding-bottom:0;
     margin-top:0;
-}
+} */
 
 /* ANIMATION */
 
