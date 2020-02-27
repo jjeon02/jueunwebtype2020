@@ -14,15 +14,16 @@ summary{
     width:100%;
     list-style-image: url(icon.svg);
     right: 0;
+    outline: none;
 }
 summary:hover{
     background-color:#cccccc;
     outline: none;
 }
-
 summary:active{
 	outline:none;
 }
+
 details{
     width:100%;
     right: 0;
