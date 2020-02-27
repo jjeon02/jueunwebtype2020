@@ -21,7 +21,8 @@ summary:hover{
     outline: none;
 }
 summary:active{
-	outline:none;
+    outline:none;
+    animation: appears 0.5s linear;
 }
 
 details{
