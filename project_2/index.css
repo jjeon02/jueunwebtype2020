@@ -1,12 +1,15 @@
 h1{
     font-family: "pixelVarious";
-    font-size: 100px;
+    font-size: 8em;
     font-weight: 100;
-    letter-spacing: 5px;
+    letter-spacing: -2px;
+    text-align: center;
+    color:blue;
 }
 
 @font-face {
     font-family: "pixelVarious";
     src: url("NewFontGX.ttf");
     font-weight: 100 900;
-  }
+}
+
