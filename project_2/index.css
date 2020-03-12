@@ -1,10 +1,34 @@
+body{
+    background-color:black;
+}
+
 h1{
     font-family: "pixelVarious";
-    font-size: 8em;
+    font-size: 6em;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color:white;
+    padding-left:60px;
+}
+
+h2{
+    font-family: "courier new";
+    font-size: 2em;
     font-weight: 100;
     letter-spacing: -2px;
+    color:white;
+    background-color:black;
+}
+
+h3{
+    font-family: "pixelVarious";
+    font-size: 6em;
+    letter-spacing: -2px;
+    color:black;
     text-align: center;
-    color:blue;
+}
+h3:hover{
+    animation: fontchange 1s ease-in;
 }
 
 @font-face {
@@ -13,3 +37,44 @@ h1{
     font-weight: 100 900;
 }
 
+@keyframes fontchange{
+    0%{
+        font-weight: 100;
+    }
+    100%{
+        font-weight: 900;
+    }
+}
+
+.bg{
+    position:fixed;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    z-index: -1;
+}
+
+.left{
+    width:70%;
+    margin: 0 25% 0 0;
+    text-align: left;
+}
+
+.right{
+    width:70%;
+    right:0;
+    margin: 0 0 0 25% ;
+    text-align: right;
+}
+
+.timemachine{
+    background:url("time_machine.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
