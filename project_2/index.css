@@ -8,7 +8,6 @@ h1{
     font-weight: 900;
     letter-spacing: 4px;
     color:white;
-    padding-left:60px;
 }
 
 h2{
@@ -20,31 +19,36 @@ h2{
     background-color:black;
 }
 
-h3{
-    font-family: "pixelVarious";
-    font-size: 6em;
-    letter-spacing: 4px;
-    color:black;
-    text-align: center;
-    padding:0;
-    margin:0;
-    line-height:0.75;
-}
-h3:hover{
-    animation: fontchange 1s ease-in;
-}
+
 
 h4{
     font-family: "pixelVarious";
     font-size: 6em;
     letter-spacing: 2px;
     color:white;
-    text-align: center;
     padding:0;
     margin:0;
     line-height:2;
 }
 
+summary{
+    font-family: "pixelVarious";
+    font-size: 6em;
+    letter-spacing: 4px;
+    color:white;
+    line-height:1.2;
+    font-weight: 100;
+    margin-top:0;
+    padding-top:0;
+}
+
+summary:hover{
+    animation: fontchange 1s linear;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
 
 @font-face {
     font-family: "pixelVarious";
@@ -55,11 +59,9 @@ h4{
 @keyframes fontchange{
     0%{
         font-weight: 100;
-        letter-spacing: 4px;
     }
     100%{
         font-weight: 900;
-        letter-spacing: 12px;
     }
 }
 
@@ -76,30 +78,16 @@ h4{
 }
 
 .left{
-    width:70%;
-    margin: 0 25% 0 0;
+    width:80%;
+    margin: 0 15% 0 0;
     text-align: left;
+    padding-left:60px;
 }
 
 .right{
-    width:70%;
+    width:80%;
     right:0;
-    margin: 0 0 0 25% ;
+    margin: 0 0 0 15%;
+    padding-right:60px;
     text-align: right;
-}
-
-.clock{
-    width:1200px;
-    height: 50px;
-    padding:0;
-    margin: 10 auto 10 25%;
-    text-align: left;
-}
-
-.time{
-    background:url("time_machine.jpg") no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-    background-size: cover;
 }
