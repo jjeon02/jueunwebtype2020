@@ -1,1 +1,3 @@
-noCanvas();
+function setup (){
+    noCanvas();
+}
