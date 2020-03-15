@@ -4,7 +4,7 @@ body{
 
 h1{
     font-family: "pixelVarious";
-    font-size: 6em;
+    font-size: 8em;
     font-weight: 900;
     letter-spacing: 4px;
     color:white;
@@ -19,31 +19,39 @@ h2{
     background-color:black;
 }
 
-
-
-h4{
+h3{
     font-family: "pixelVarious";
-    font-size: 6em;
+    font-size: 4em;
     letter-spacing: 2px;
-    color:white;
-    padding:0;
+    color:black;
+    padding-left:60px;
     margin:0;
     line-height:2;
 }
 
+h3:hover{
+    animation: fontkerning 2s infinite;
+}
+
 summary{
     font-family: "pixelVarious";
-    font-size: 6em;
+    font-size: 4.8em;
     letter-spacing: 4px;
     color:white;
     line-height:1.2;
     font-weight: 100;
-    margin-top:0;
-    padding-top:0;
+    padding: 0 0 15px 0;
+    margin:0;
+    outline: none;
 }
 
 summary:hover{
-    animation: fontchange 1s linear;
+    animation: fontchange 2s infinite;
+    outline: none;
+}
+
+summary:active{
+    outline:none;
 }
 
 summary::-webkit-details-marker {
@@ -56,14 +64,33 @@ summary::-webkit-details-marker {
     font-weight: 100 900;
 }
 
+/* ANIMATION */
+
 @keyframes fontchange{
     0%{
         font-weight: 100;
     }
-    100%{
+    50%{
         font-weight: 900;
     }
+    100%{
+        font-weight: 100;
+    }
 }
+
+@keyframes fontkerning{
+    0%{
+        letter-spacing: 4px;
+    }
+    50%{
+        letter-spacing: 12px;
+    }
+    100%{
+        letter-spacing: 4px;
+    }
+}
+
+/* CLASSES */
 
 .bg{
     position:fixed;
@@ -79,15 +106,28 @@ summary::-webkit-details-marker {
 
 .left{
     width:80%;
-    margin: 0 15% 0 0;
+    margin: 0 15% 0 60px;
     text-align: left;
-    padding-left:60px;
 }
 
 .right{
     width:80%;
     right:0;
-    margin: 0 0 0 15%;
-    padding-right:60px;
+    margin: 0 60px 0 15%;
     text-align: right;
+}
+
+.imgbox{
+    height: 500px;
+    margin-left:0;
+}
+
+
+.time{
+    background: url("time_machine.jpg") no-repeat  center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: 9% 700px;
+	-o-background-size: 90% 700px;
+    background-size: 90% 700px;
+    border: 1px solid white;
 }
