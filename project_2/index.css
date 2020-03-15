@@ -8,6 +8,7 @@ h1{
     font-weight: 900;
     letter-spacing: 4px;
     color:white;
+    animation: fontchange 2s infinite;
 }
 
 h2{
@@ -21,17 +22,17 @@ h2{
 
 h3{
     font-family: "pixelVarious";
-    font-size: 4em;
+    font-size: 4.8em;
     letter-spacing: 2px;
     color:black;
-    padding-left:60px;
     margin:0;
-    line-height:2;
+    line-height:1.2;
 }
 
 h3:hover{
     animation: fontkerning 2s infinite;
 }
+
 
 summary{
     font-family: "pixelVarious";
@@ -56,6 +57,10 @@ summary:active{
 
 summary::-webkit-details-marker {
     display: none
+}
+
+a{
+    color: black;
 }
 
 @font-face {
@@ -83,7 +88,7 @@ summary::-webkit-details-marker {
         letter-spacing: 4px;
     }
     50%{
-        letter-spacing: 12px;
+        letter-spacing: 8px;
     }
     100%{
         letter-spacing: 4px;
@@ -91,6 +96,19 @@ summary::-webkit-details-marker {
 }
 
 /* CLASSES */
+.text{
+    font-family: "courier new";
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color:white;
+    background-color:black;
+    line-height:1.2;
+}
+
+.textframe{
+    margin:60px;
+}
 
 .bg{
     position:fixed;
@@ -118,16 +136,37 @@ summary::-webkit-details-marker {
 }
 
 .imgbox{
-    height: 500px;
+    height: 50%;
     margin-left:0;
 }
 
+/* individual bg images */
 
 .time{
-    background: url("time_machine.jpg") no-repeat  center fixed;
+    background: url("time_machine.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
-	-moz-background-size: 9% 700px;
-	-o-background-size: 90% 700px;
-    background-size: 90% 700px;
-    border: 1px solid white;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    border: 2px solid white;
+    border-radius:4px;
+}
+.war{
+    background: url("war_worlds.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    border: 2px solid white;
+    border-radius:4px;
+}
+
+.moon{
+    background: url("moon.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    border: 2px solid white;
+    border-radius:4px;
 }
