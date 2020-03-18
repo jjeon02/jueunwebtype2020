@@ -138,6 +138,7 @@ a{
 .imgbox{
     height: 50%;
     margin-left:0;
+    margin-bottom: 20px;
 }
 
 /* individual bg images */
