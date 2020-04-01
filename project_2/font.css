@@ -4,9 +4,9 @@ body{
 
 h1{
     font-family: "pixelVarious";
-    font-size: 8em;
+    font-size: calc(4.8em + 1.2vw);
     font-weight: 900;
-    letter-spacing: 4px;
+    letter-spacing: 0.05em;
     color:white;
     animation: fontchange 2s infinite;
     overflow-wrap: break-word;
@@ -14,78 +14,39 @@ h1{
     hyphens: auto;
 }
 
-h2{
-    font-family: "courier new";
-    font-size: 2em;
+.light{
+    font-family: "pixelVarious";
+    font-size: calc(4.8em + 2vw);
+    color:white;
+    text-align:center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
     font-weight: 100;
-    letter-spacing: 4px;
+}
+
+.boldanimation{
+    animation: fontbold 1.2s ease-in;
+}
+
+.bold{
+    font-family: "pixelVarious";
+    font-size: calc(4.8em + 2vw);
     color:white;
-    background-color:black;
+    text-align:center;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
+    font-weight: 900;
 }
 
-h3{
-    font-family: "pixelVarious";
-    font-size: 4.8em;
-    letter-spacing: 2px;
-    color:black;
-    margin:0;
-    line-height:1.2;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-}
-
-h3:hover{
-    animation: fontchange 2s infinite;
+.lightanimation{
+    animation: fontlight 1.2s ease-in;
 }
 
 
-summary{
-    font-family: "pixelVarious";
-    font-size: 4.8em;
-    letter-spacing: 4px;
-    color:white;
-    line-height:1.2;
-    font-weight: 100;
-    padding: 0 0 15px 0;
-    margin:0;
-    outline: none;
-
-}
-
-summary:hover{
-    animation: fontchange 2s infinite;
-    outline: none;
-}
-
-summary:active{
-    outline:none;
-}
-
-summary::-webkit-details-marker {
-    display: none
-}
-
-a{
-    color: black;
-}
-
-@font-face {
-    font-family: "pixelVarious";
-    src: url("NewFontGX.ttf");
-    font-weight: 100 900;
-}
-
-/* ANIMATION */
-
-@keyframes fontchange{
+@keyframes fontlight{
     0%{
-        font-weight: 100;
-    }
-    50%{
         font-weight: 900;
     }
     100%{
@@ -93,37 +54,25 @@ a{
     }
 }
 
-/* @keyframes fontkerning{
+@keyframes fontbold{
     0%{
-        letter-spacing: 4px;
-    }
-    50%{
-        letter-spacing: 8px;
+        font-weight: 100;
     }
     100%{
-        letter-spacing: 4px;
+        font-weight: 900;
     }
-} */
-
-/* CLASSES */
-.text{
-    font-family: "courier new";
-    font-size: 2em;
-    font-weight: 100;
-    letter-spacing: 4px;
-    color:white;
-    background-color:black;
-    line-height:1.2;
-    display:inline-block;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
 }
 
-.textframe{
-    margin:60px;
-    display:inline-block;
-    overflow:scroll;
+button{
+    font-family: "courier new";
+    font-size: calc(1em + .8vw);
+    font-weight: 100;
+    color:white;
+    background-color:black;
+    width:50%;
+    border: 2px solid white;
+    border-radius: 4px; 
+    margin: 2em 25% 2em 25%;
 }
 
 .bg{
@@ -144,80 +93,8 @@ a{
     text-align: left;
 }
 
-.right{
-    width:80%;
-    right:0;
-    margin: 0 60px 0 15%;
-    text-align: right;
-}
-
-.imgbox{
-    margin-left:0;
-    margin-bottom: 20px;
-    word-wrap: break-word;
-}
-
-/* individual bg images */
-
-.time{
-    background: url("time_machine.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
-}
-.war{
-    background: url("war_worlds.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
-}
-
-.moon{
-    background: url("moon.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
-}
-
-.earth{
-    background: url("earth.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
-}
-
-/* RESPONSIVE */
-
-@media only screen and (max-width: 720px) {
-    summary{
-        width:90%;
-        text-align:center;
-    }
-    .left{
-        width:90%;
-        margin: 0px auto 0px auto;
-        text-align:left;
-    }
-    .right{
-        width:90%;
-        margin: 0px auto 0px auto;
-        text-align: right;
-    }
-    .imgbox{
-        margin-left:0;
-        margin-bottom: 20px;
-        word-wrap: break-word;
-    }
+@font-face {
+    font-family: "pixelVarious";
+    src: url("NewFontGX.ttf");
+    font-weight: 100 900;
 }

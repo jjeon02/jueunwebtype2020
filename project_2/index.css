@@ -149,6 +149,8 @@ a{
     margin-left:0;
     margin-bottom: 20px;
     word-wrap: break-word;
+    border: 2px solid white;
+    border-radius:4px;
 }
 
 /* individual bg images */
@@ -159,8 +161,7 @@ a{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
+
 }
 .war{
     background: url("war_worlds.jpg") no-repeat center fixed;
@@ -168,8 +169,6 @@ a{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
 }
 
 .moon{
@@ -178,8 +177,6 @@ a{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
 }
 
 .earth{
@@ -188,8 +185,6 @@ a{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
 }
 
 .ape{
@@ -198,8 +193,6 @@ a{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
 }
 
 .tron{
@@ -208,8 +201,6 @@ a{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    border: 2px solid white;
-    border-radius:4px;
 }
 
 /* RESPONSIVE */
