@@ -4,7 +4,7 @@ body{
 
 h1{
     font-family: "pixelVarious";
-    font-size: 8em;
+    font-size: calc(4.8em + 1.2vw);
     font-weight: 900;
     letter-spacing: 0.05em;
     color:white;
@@ -16,7 +16,7 @@ h1{
 
 h2{
     font-family: "courier new";
-    font-size: 2em;
+    font-size: 6em;
     font-weight: 100;
     color:white;
     background-color:black;
@@ -27,7 +27,7 @@ h2{
 
 h3{
     font-family: "pixelVarious";
-    font-size: 4.8em;
+    font-size: calc(3.6em + 1.2vw);
     letter-spacing: 0.05em;
     color:black;
     margin:0;
@@ -44,7 +44,7 @@ h3:hover{
 
 summary{
     font-family: "pixelVarious";
-    font-size: 4.8em;
+    font-size: calc(3.6em + 1.2vw);
     letter-spacing: 0.05em;
     color:white;
     line-height:1.2;
@@ -96,13 +96,7 @@ a{
 /* CLASSES */
 
 .link{
-    width:100%;
-    z-index:2;
-    font-size: 3em;
-    letter-spacing: 0.05em;
-    font-family: "pixelVarious";
     color:white;
-    top: 10px;
 }
 .link:hover{
     animation: fontchange 2s infinite;
@@ -110,21 +104,20 @@ a{
 
 .text{
     font-family: "courier new";
-    font-size: 2em;
+    font-size: calc(1em + .8vw);
     font-weight: 100;
     color:white;
-    background-color: black;
+    background-color:black;
     line-height:1.2;
     display:inline-block;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
 }
-
 .textframe{
-    margin:60px;
+    width:72%;
+    margin: 6em 4em 6em 4em;
     display:inline-block;
-    overflow:scroll;
 }
 
 .bg{
@@ -199,6 +192,26 @@ a{
     border-radius:4px;
 }
 
+.ape{
+    background: url("planet_ape.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    border: 2px solid white;
+    border-radius:4px;
+}
+
+.tron{
+    background: url("tron.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    border: 2px solid white;
+    border-radius:4px;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 720px) {
@@ -207,18 +220,23 @@ a{
         text-align:center;
     }
     .left{
-        width:90%;
+        width:84%;
         margin: 0px auto 0px auto;
-        text-align:left;
+        text-align:center;
     }
     .right{
-        width:90%;
-        margin: 0px auto 0px auto;
-        text-align: right;
+        width:84%;
+        margin: auto;
+        text-align: center;
     }
     .imgbox{
         margin-left:0;
         margin-bottom: 20px;
         word-wrap: break-word;
+    }
+    .textframe{
+        width:72%;
+        margin: 4em;
+        display:inline-block;
     }
 }
