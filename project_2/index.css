@@ -92,7 +92,6 @@ a{
     }
 }
 
-
 /* CLASSES */
 
 .link{
@@ -197,6 +196,43 @@ a{
 
 .tron{
     background: url("tron.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.owell{
+    background: url("1984.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.terminator{
+    background: url("terminator.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.space{
+    background: url("spaceodyssey.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.future{
+    background: url("future.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.blade{
+    background: url("bladerunner.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
