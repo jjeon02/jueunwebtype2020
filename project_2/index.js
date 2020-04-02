@@ -1,6 +1,7 @@
 
 window.onload = function(){
     countUp("Jan 1, 1894 12:00:00",'timer');
+    countUp("Jan 1, 1898 12:00:00", 'timer2');
 };
 
 function countUp(countFrom, id){
@@ -21,7 +22,6 @@ function countUp(countFrom, id){
 
     document.getElementById(id).innerHTML = years +':'+days+':'+ hours+':'+ mins +':'+secs;
 
-    clearTimeout(countUp.interval);
     countUp.interval = setTimeout(function(){ countUp(countFrom, id);}, 1000);
 
 }

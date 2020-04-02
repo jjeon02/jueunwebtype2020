@@ -7,3 +7,12 @@ function changeWeight() {
         fon.className='light';
     }
 }
+
+$(document).ready(function(){
+    $('vfcontrols').on('change',function(){
+        let value = $(this).val();
+        let setting = "'slnt'" + value;
+        $('p.letters').css('font-variation-settings');
+        console.log('slider changed to'+ value);
+    });
+});

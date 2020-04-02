@@ -17,12 +17,17 @@ h1{
 .light{
     font-family: "pixelVarious";
     font-size: calc(4.8em + 2vw);
+    letter-spacing: 0.05em;
     color:white;
     text-align:center;
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto;
     font-weight: 100;
+}
+
+p.letters{
+    
 }
 
 .boldanimation{
@@ -32,6 +37,7 @@ h1{
 .bold{
     font-family: "pixelVarious";
     font-size: calc(4.8em + 2vw);
+    letter-spacing: 0.05em;
     color:white;
     text-align:center;
     overflow-wrap: break-word;
@@ -73,8 +79,30 @@ button{
     border: 2px solid white;
     border-radius: 4px; 
     margin: 2em 25% 2em 25%;
+
+}
+.slider{
+    -webkit-appearance: none;
+    width: 50%;
+    margin: 2em 25% 2em 25%;
+    height: 5px;
+    background: white;
+    outline: none;
+   -webkit-transition: .2s;
+    transition: .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: black;
+    border: 5px solid white;
+    border-radius:50%;
+    cursor: pointer;
 }
 
+  
 .bg{
     position:fixed;
     margin:0;
