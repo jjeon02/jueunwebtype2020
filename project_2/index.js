@@ -1,7 +1,16 @@
 
 window.onload = function(){
-    countUp("Jan 1, 1894 12:00:00",'timer');
-    countUp("Jan 1, 1898 12:00:00", 'timer2');
+    countUp("Jan 1, 1894 24:00:00",'timer');
+    countUp("Jan 1, 1898 14:50:11", 'timer2');
+    countUp("Oct 4, 1902 03:16:13", 'timer3');
+    countUp("Sep 28, 1951 05:17:24" , 'timer4');
+    countUp("Mar 27, 1968 16:28:18" , 'timer5');
+    countUp("Jul 9, 1982 08:27:12" , 'timer6');
+    countUp("Jun 8, 1984 17:34:10" , 'timer7');
+    countUp("Jul 3, 1991 12:00:00" , 'timer8');
+    countUp("Apr 3, 2001 23:45:05" , 'timer9');
+    countUp("Nov 22, 2016 14:04:07" , 'timer10');
+    countUp("Jun 25, 2019 12:10:09" , 'timer11');
 };
 
 function countUp(countFrom, id){
