@@ -14,20 +14,11 @@ h1{
     hyphens: auto;
 }
 
-h2{
-    font-family: "courier new";
-    font-size: 6em;
-    font-weight: 100;
-    color:white;
-    background-color:black;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
-}
 
 h3{
     font-family: "pixelVarious";
-    font-size: calc(3.6em + 1.2vw);
+    font-size: calc(4.8em + 1.2vw);
+    font-weight:100;
     letter-spacing: 0.05em;
     color:black;
     margin:0;
@@ -41,23 +32,10 @@ h3:hover{
     animation: fontchange 2s infinite;
 }
 
-
 summary{
-    font-family: "pixelVarious";
-    font-size: calc(3.6em + 1.2vw);
-    letter-spacing: 0.05em;
-    color:white;
-    line-height:1.2;
-    font-weight: 100;
+    outline:none;
     padding: 0 0 15px 0;
     margin:0;
-    outline: none;
-
-}
-
-summary:hover{
-    animation: fontchange 2s infinite;
-    outline: none;
 }
 
 summary:active{
@@ -65,7 +43,23 @@ summary:active{
 }
 
 summary::-webkit-details-marker {
-    display: none
+    display: none;
+}
+
+.timer{
+    font-family: "pixelVarious";
+    font-size: calc(4.8em + 1.2vw);
+    letter-spacing: 0.05em;
+    color:white;
+    line-height:1.2;
+    font-weight: 100;
+    margin:0;
+}
+
+.timer:hover{
+    animation: fontchange 2s infinite;
+    outline: none;
+    color:blue;
 }
 
 a{
@@ -98,6 +92,7 @@ a{
     color:white;
 }
 .link:hover{
+    color:blue;
     animation: fontchange 2s infinite;
 }
 
@@ -129,6 +124,18 @@ a{
     left:0;
     right:0;
     z-index: -1;
+}
+
+.blackbg{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width:100%;
+    left:0;
+    right:0;
+    margin:0;
+    z-index: 1;
+    background-color:#000000;
+    padding: 2em 0 2em 0;
 }
 
 .left{
@@ -265,5 +272,8 @@ a{
         width:72%;
         margin: 4em;
         display:inline-block;
+    }
+    .timer{
+        font-size: calc(3.6em + 1.2vw);
     }
 }

@@ -102,23 +102,39 @@ button{
     cursor: pointer;
 }
 
-  
 .bg{
     position:fixed;
     margin:0;
     padding:0;
     width:100%;
     height:100%;
+    opacity: .3;
     top:0;
     left:0;
     right:0;
     z-index: -1;
 }
-
-.left{
+.nav{
+    position:fixed;
+    top:0;
     width:80%;
-    margin: 0 15% 0 60px;
-    text-align: left;
+    margin: auto ;
+    padding: 30px 60px 0px 30px;
+    font-family: "courier new";
+    font-size: calc(1em + .8vw);
+    font-weight: 100;
+    color:white;
+    line-height:1.2;
+    display:inline-block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:blue;
 }
 
 @font-face {
