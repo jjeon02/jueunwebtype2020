@@ -6,27 +6,6 @@ img{
     width:100%;
 }
 /* NAVIGATION DESIGN */
-.nav{
-    position: fixed;
-    width:100%;
-    height:auto;
-    background-color:black;
-    top:0;
-    left:0;
-    padding:1em;
-    z-index:1;
-}
-.navtitle{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    font-weight:500;
-    color:white;
-}
-
-.titleimg{
-    animation: colchange 4.8s infinite;
-}
 
 @keyframes colchange{
     0%{
@@ -43,95 +22,22 @@ img{
     }
 }
 
-.horizontal{
-    position: fixed;
-    width:100vh;
-    height: 100vw;
-    left:0;
-    top:0;
-    overflow-x:hidden;
-    overflow-y:scroll;
-    transform: rotate(-90deg) translateY(-100vh);
-    transform-origin: right top;
-    background-color: #111111;
-    z-index: -1;
-}
-
 /* BLOCK DESIGN */
-
-.block{
-    display: grid;
-    position: fixed;
-    grid-template-columns: repeat(100,auto);
-    width:auto;
-    height:100vh;
-    left:0; right:0; top:0; bottom:0;
-    margin:0vh;
-    padding:0;
-    color:white;
-    transform: rotate(90deg) translateX(100vh);
-    transform-origin: right top;
-    border: 1px solid red;
-    z-index: 0;
-}
-
-.innerblock{
-    height:100vh;
-    margin:0;
-    border-left:blue 1px solid;
-    z-index: 1;
-    background-color: rgb(4,4,4,.5);
-}
 
 .title{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 6em;
+    font-size: 5.4em;
     line-height: 1.2em;
     font-weight:900;
+    margin:auto;
+    text-align:center;
+    color:white;
 }
-
-.img{
-    width: 36em;
-    display: inline-block;
-    height:100vh;
-    margin:4.8em 2em 4.8em 0em;
-    top:0;bottom:0;
-}
-
-.text{
-    height: 74vh;
-    width: 30em;
-    overflow-wrap: break-word;
-    overflow-y:scroll;
-    margin:4.8em 2em 4.8em 0em;
-    padding: 0em 1.2em 3.6em 1.2em;
-    top:0;bottom:0;
-    display: inline-block;
-    border-radius: .5em;
-}
-
-.text::-webkit-scrollbar{
-    width:.8em;
-}
-
-.text::-webkit-scrollbar-track{
-    background: none;
-    width:.8em;
-}
-
-.text::-webkit-scrollbar-thumb{
-    background-color:#bbbbbb;
-    border-radius: .5em;
-    width:1em;
-    border:none;
-}
-
-.text::-webkit-scrollbar-thumb:hover{
-    background: #eeeeee;
-}
-
 /* TYPOGRAPHY DESIGN */
-
+.content{
+    width:90%;
+    margin:12em auto 12em auto;
+}
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 2.4em;
@@ -139,6 +45,7 @@ h1{
     top:0;
     margin-top:0em;
     padding-top:0;
+    color:white;
 }
 h2{
     font-family: 'Playfair Display', serif;
@@ -159,13 +66,48 @@ h3{
 }
 p{
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.2em;
-    line-height: 1.4em;
+    font-size: 1.4em;
+    line-height: 1.8em;
     font-weight:400;
-    padding:0;
+    padding:0em 0em 0em 24em;
     margin:0;
     hyphens:auto;
     text-align: left;
+    color:white;
+}
+
+.indent{
+    padding: 0em 10em 0em 30em;
+}
+.imgbox{
+    width: 100vw;
+    height:60em;
+    margin:0;
+    left:0;
+    right:0;
+}
+#imgone{
+    background: url("sketch-02.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#imgtwo{
+    background: url("sketch-06.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#imgthree{
+    background: url("sketch-08.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 /* SCROLLBAR DESIGN */
