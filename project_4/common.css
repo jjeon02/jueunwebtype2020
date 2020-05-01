@@ -1,0 +1,512 @@
+body{
+    margin:0;
+    scroll-behavior:smooth;
+    background-color:black;
+}
+
+img{
+    width:100%;
+}
+
+ /* LINKS */
+ a{
+    text-decoration: none; 
+}
+a:hover{
+    cursor: pointer;
+}
+
+a:visited{
+    color:white;
+}
+.link{
+    color:#888;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link:hover{
+    animation: colchange 2s infinite;
+}
+.link:visited{
+    color:#888;
+}
+.been{
+    color:white;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.been:hover{
+    animation: colchange 2s infinite;
+}
+.been:visited{
+    color:white;
+}
+
+ /* COLOR ANIMATION */
+    
+ @keyframes colchange{
+    0%{
+        color: #f2389a;
+    }
+    25%{
+        color: #f4f431;
+    }
+    50%{
+       color:#2995ed;
+    }
+    75%{
+        color:#64ff00;
+    }
+    100%{
+        color: #f2389a;
+    }
+}
+
+/* NAVIGATION */
+.nav{
+    top:0;
+    border-bottom: 1px solid #bbb;
+    display:flex;
+    grid-template-columns: auto auto;   
+}
+
+.navtitle{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-weight:300;
+    margin-right:1.2em;
+}
+
+.nav-bottom{ 
+    width:100%;
+    bottom:0;   
+    border-top: 1px solid #bbb;
+}
+
+.nav, .nav-bottom{
+    overflow-x:scroll;
+    width:100%;
+    height:1.1em;
+    position: fixed;
+    left:0;
+    padding:.8em;
+    color:white;
+    z-index:5;
+    background-color:black;
+}
+
+/* Essay */
+.imgone{
+    background: url("essay/sketch-02.jpg") no-repeat center;
+}
+
+.imgtwo{
+    background: url("essay/sketch-06.jpg") no-repeat center;
+}
+
+.imgthree{
+    background: url("essay/sketch-08.jpg") no-repeat center;
+}
+.imgone, .imgtwo, .imgthree {
+    -webkit-background-size: 100% 100%;
+    -moz-background-size:  100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+/* FONT */
+    
+h1{
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color:white;
+}
+
+h2{
+    font-size: 1.6em;
+    line-height: 1.2em;
+    color:#999;
+}
+
+h3{
+    font-size: 1.8em;
+    line-height: 1.4em;
+    font-weight:600;
+    color:white;
+}
+
+h4{   
+    font-weight:600;
+    color:#bbb;
+}
+
+p{
+    font-weight:200;
+    color:#999;
+}
+
+h1, h2, h3, h4, p{
+    font-family: 'Gothic A1', sans-serif;
+    top:0;
+    padding:0;
+    margin:0;
+}
+
+h4, p{
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.indent{
+    padding: 0em 1.2em 0em 1.2em;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+@media only screen and (min-width: 541px){
+
+    /* HORIZONTAL STRUCTURE */
+    
+    #container {
+        display:inline-block;
+        position:relative;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        transform: rotate(270deg) translateX(-100%);
+        transform-origin: top left;
+        border-left:#999 solid;
+        position:absolute;
+        scroll-behavior: smooth;
+        box-sizing: border-box; /*includes padding in height and makes sure there is no overlap with nav*/
+    }
+    
+    #container2{
+        width:auto;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+        display:grid;
+        grid-template-columns: repeat(100,auto);
+        z-index: 4;
+    }
+    
+    #container, #container2{
+        width:100vh;
+        height:100vw;
+        top:0;bottom:0;left:0;right:0;
+    }   
+    
+    #empty{
+        left:0;
+        width: 100vh;
+        height: 100vh;
+        transform: rotate(90deg) translateY(-100vh);
+        transform-origin: top left;
+    }
+
+    .squarebox{
+        padding: 14vh 1.2em 14vh 1.2em;
+        width: auto;
+        display:inline-block;
+        background-color:black;
+    }
+
+    .img{
+        width:72vh;
+        height:72vh;
+    }
+    
+    .text{
+        width:36vh;
+        height:72vh;
+        overflow:scroll;
+    }
+    
+    /* ESSAY */
+    .essayheading{
+        width: 100vh;
+        border: 1px solid #444;
+        box-sizing: border-box;
+    }
+    
+    .gap{
+        width:48vh;
+    }
+    
+    .gap, .essayheading {
+        position:relative;
+        display:inline-block;
+        height:100vh;
+        white-space:normal;
+        overflow-y:hidden;
+        padding: 4.8em 1.2em 1.2em 1.2em;
+        background-color:black;
+    }
+
+    /* SKETCH STRUCTURE*/
+    
+    .sketchsubtitle{
+        width: 24vh;
+        height:100vh;
+        display:inline-block;
+        position:relative;
+        white-space:normal;
+        overflow-y:hidden;
+        padding: 4.2em 12em 1.2em 1.2em;
+        border-left: 1px dashed white;
+        background-color:black;
+    }
+    
+    .sketchbox{
+        padding: 14vh 1.2em 14vh 1.2em;
+        height:100vh;
+        width: auto;
+        box-sizing: border-box;
+        display:inline-block;
+        background-color:black;
+    }
+    
+    .sketchimg{
+        width: 100vh;
+        height:100%;
+        display:inline-block;
+    }
+    
+    .digitalgrid{
+        display:grid;
+        height:72vh;
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:1em;
+    }
+    
+    .digitalimg{
+        width:36vh;
+        height:36vh;
+    }
+    
+    .finalimg{
+        width:auto;
+        height:35vh;
+    }
+    
+    .digitalimg, .finalimg{
+        border: 1px solid  #444;
+    }
+    
+    /* TIMELINE STRUCTURE */
+    
+    #timelinetitle{
+        width: 100vh;
+        height:100vh;
+        z-index:-1;
+        position:fixed;
+        background-color:black;
+    }
+    
+    #titleimg{
+        margin: 10vh 0 10vh 0 ;
+    }
+    
+    .explain{
+        width: 36vh; 
+        height:100vh;  
+        border-left: 1px dashed #444;
+    }
+    .time{
+        width: 12vh;
+        height:100vh;
+        border-left: 1px dashed #444;
+    }    
+    .space{
+        width: 12vh;
+        background-color:black;
+    }
+    
+    .explain, .time, .space{
+        box-sizing: border-box;
+        position:relative;
+        display:inline-block;
+        white-space:normal;
+        overflow-y:hidden;
+        padding: 4.8em 1.2em 1.2em 1.2em;
+        background-color:black;
+    }
+    
+}
+
+@media only screen and (max-width: 540px) {
+
+    /* HORIZONTAL STRUCTURE */
+    
+    #container {
+        display:inline-block;
+        position:relative;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        border-left:#999 solid;
+        position:absolute;
+        scroll-behavior: smooth;
+        box-sizing: border-box; 
+        left:0;
+    }
+    
+    #container2{
+        width:auto;
+        display:grid;
+        grid-template-rows: repeat(100,auto);
+        z-index: 4;
+        left:0;
+    }
+    
+    #container, #container2{
+        width:100vw;
+        height:100vh;
+        top:0;bottom:0;left:0;right:0;
+    }  
+    
+    #empty{
+        left:0;
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .squarebox{
+        box-sizing:border-box;
+        padding: 0em;
+        width: 100vw;
+        display:inline-block;
+        background-color:black;
+    }
+
+    .img{
+        width:96vw;
+        height:96vw;
+    }
+    
+    .text{
+        width:84vw;
+        margin: auto;
+        height:auto;
+        overflow:scroll;
+    }
+    
+    /* ESSAY */
+    .essayheading{
+        width: 100vw;
+        border: 1px solid #444;
+        box-sizing: border-box;
+    }
+    
+    .gap{
+        width:48vh;
+    }
+    
+    .gap, .essayheading {
+        position:relative;
+        display:inline-block;
+        height:100vw;
+        white-space:normal;
+        overflow-y:hidden;
+        padding: 1.2em 1.2em 1.2em 1.2em;
+        background-color:black;
+    }
+    
+    /* SKETCH STRUCTURE*/
+    
+    .sketchsubtitle{
+        width: 24vh;
+        height:100vh;
+        display:inline-block;
+        position:relative;
+        white-space:normal;
+        overflow-y:hidden;
+        padding: 4.2em 12em 1.2em 1.2em;
+        border-left: 1px dashed white;
+        background-color:black;
+    }
+    
+    .sketchbox{
+        padding: 14vh 1.2em 14vh 1.2em;
+        height:100vh;
+        width: auto;
+        box-sizing: border-box;
+        display:inline-block;
+        background-color:black;
+    }
+    
+    .sketchimg{
+        width: 100vh;
+        height:100%;
+        display:inline-block;
+    }
+    
+    .digitalgrid{
+        display:grid;
+        height:72vh;
+        width: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:1em;
+    }
+    
+    .digitalimg{
+        width:36vh;
+        height:36vh;
+    }
+    
+    .finalimg{
+        width:auto;
+        height:35vh;
+    }
+    
+    .digitalimg, .finalimg{
+        border: 1px solid  #444;
+    }
+    
+    
+    /* TIMELINE STRUCTURE */
+    
+    #timelinetitle{
+        width: 100vw;
+        height:100vw;
+        z-index:-1;
+        position:fixed;
+        left:0;
+        background-color:black;
+    }
+    
+    #titleimg{
+        margin: 10vh 0 10vh 0 ;
+    }
+    
+    .explain{
+        width: 100vw; 
+        height: 100vh;
+        border-top: 1px dashed #444;
+    }
+
+    .time{
+        height: auto;
+        width: 100vw;
+        border-top: 1px dashed #444;
+    }    
+    .space{
+        width: 100vw;
+        height: 1vw;
+        background-color:black;
+    }
+    
+    .explain, .time, .space{
+        box-sizing: border-box;
+        position:relative;
+        display:inline-block;
+        white-space:normal;
+        overflow-y:hidden;
+        padding:1.2em;
+        background-color:black;
+    }
+    
+
+}   
