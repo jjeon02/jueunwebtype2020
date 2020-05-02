@@ -1,0 +1,34 @@
+.video, .videotitle{
+    width: 24vw;
+    height: 24vw;  
+    margin: 1.2em;
+    box-sizing:border-box;
+    border: 1px solid #999;
+}
+
+.videotitle{
+    padding: 2em;
+}
+
+#a{
+    transform: translateX(60vw) translateY(-6vw);
+}
+#b{
+    transform: translateX(32vw) translateY(-12vw);
+}
+
+@media only screen and (max-width: 540px) {
+
+    .video{
+        width: 84vw;
+        height: 84vw;
+        margin: 8vw;
+    }
+
+    #a{
+        transform: translateX(0vw) translateY(0vw);
+    }
+    #b{
+        transform: translateX(0vw) translateY(0vw);
+    }
+}
