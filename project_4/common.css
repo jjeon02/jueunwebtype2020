@@ -103,17 +103,22 @@ a:visited{
 
 /* Essay */
 .imgone{
-    background: url("essay/sketch-02.jpg") no-repeat center;
+    background: url("essay/essay_1.jpg") no-repeat center;
 }
 
 .imgtwo{
-    background: url("essay/sketch-06.jpg") no-repeat center;
+    background: url("essay/essay_2.jpg") no-repeat center;
 }
 
 .imgthree{
-    background: url("essay/sketch-08.jpg") no-repeat center;
+    background: url("essay/essay_3.jpg") no-repeat center;
 }
-.imgone, .imgtwo, .imgthree {
+
+.imgfour{
+    background: url("essay/essay_4.jpg") no-repeat center;
+}
+
+.imgone, .imgtwo, .imgthree, .imgfour{
     -webkit-background-size: 100% 100%;
     -moz-background-size:  100% 100%;
     -o-background-size: 100% 100%;
@@ -304,7 +309,7 @@ h4, p{
         height:100vh; 
         border-left: 1px dashed #444;
     }
-    
+
     .time{
         width: 12vh;
         height:100vh;
