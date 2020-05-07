@@ -1,62 +1,45 @@
-.korean-grid{
+.koreangrid{
+    width:72vh;
+    height:72vh;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width:100%;
-    padding:0 9% 0 9%;
-    background-color:black;
+    grid-template-columns: 1fr 1fr;
     z-index: 5;
     box-sizing: border-box;
-    grid-gap:1%;
-}
-
-.titlekorean{
-    display:inline-block;
-    width: 90%;
-    margin: auto;
-    box-sizing: border-box;
-    padding: 0 10% 0 10%;
-}
-
-.titleblock{ 
-    border-top: 1px dashed #444;
-    padding: 2em 9% 0 9%;
-    margin: 2em 0 .6em 0;
-}
-
-.subtitle{
-    padding: 0 9% 0 9%;
-    margin: .6em 0 .6em 0;
-}
-
-.titleblock, .subtitle{
-    box-sizing: border-box;
-    display:inline-block;
-    width: 100%;  
+    grid-gap:.4em;
 }
 
 .box{
-    display:inline-grid;
+    border: 1px solid #bbb;
+}
+
+.captionbox{
+    padding: 0 1.2em 0 1.2em;
+}
+
+.box, .captionbox{
     width: 100%;
-    height:20vw;
+    background-color:black;
+    box-sizing:border-box;
+}
+
+.koreantitle{
+    width: 48vh; 
+    height:100vh; 
+    border-left: 1px dashed #444;
+    box-sizing: border-box;
+    position:relative;
+    display:inline-block;
+    white-space:normal;
+    overflow-y:hidden;
+    padding: 4.8em 1.2em 1.2em 1.2em;
     background-color:black;
 }
-.example{
-    border: 1px solid white;
-    z-index: 2;
-}
-
-.textsquare{
-    padding:.6em;
-    overflow:scroll;
-    display:inline-block;
-    width:100%;
-}
-
 
 h5{
     font-weight:600;
-    color: #bbb;
+    color: #eee;
 }
+
 h6{
     font-weight:400;
     color: #999;
@@ -70,141 +53,40 @@ h5, h6{
     margin:0;
 }
 
-.flex{
-    padding: 36% 1em 22% 1em;  
-    font-size: 7.2vw;    
-}
-
-.sentence{
-    padding:2em;
-    padding: 23% 1em 22% 1em;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: 2vw;
-    line-height: 1.2em;
-}
-
-.flex, .sentence{
-    padding:2em;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight:400;
-    text-align:center;
-    color:white;
-    overflow:hidden;
-}
-
-.letter-box{  
-    height: 20vw;
-    flex-wrap:wrap;
-    border: 1px solid white;
-    overflow:hidden;
-}
-
-.alphabet{
-    height: 4vw;
-    overflow:hidden;
-}
-
-.letter-box, .alphabet{
-    display:flex;
-    width: 20vw;
-}
-
-.border{
-    border-bottom: 1px dashed white;
-}
-
-.con-box{
-    color:#ee3d96;
-    padding-left:1.2em;
-}
-
-.vowel-box{
-    color:#4990cd;
-    padding-left:1.2em;
-}
-
-.pro{
-    color:#f0ea3d;
-    padding-left:1.2em;
-}
-
-.pronounce{
-    color:#f0ea3d;
-    top:0;
-}
-
-.con-box, .vowel-box, .pro{
-    display:inline-block;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: calc(4em+2.4vw);
-    line-height: 4.8vw;
-    font-weight:400;
-    width:100%;
-}
-
-.pronounce{
-    display:inline-block;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: calc(4em+2.4vw);
-    font-weight:400;
-    line-height: 2em;
-    width:100%;
-}
-
-
-@media only screen and (min-width: 601px) and (max-width:1240px){
-    .korean-grid{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        width:90%;
-        margin:auto;
-        background-color:black;
-        z-index: 5;
-        padding:0 5% 0 5%;
-    }
-    .box{
-        display:inline-grid;
-        width: 100%;
-        height:40vw;
-        background-color:black;
-    }
-
-    .letter-box{
-        height: 40vw;
-    }
-    .alphabet{
-        height:8vw;
-    }
-    .letter-box, .alphabet{
-        display:flex;
-        width: 40vw;
-    }
-}
 
 @media only screen and (max-width: 600px){
-    .korean-grid{
+    .koreangrid{
+        width:84vw;
+        height:auto;
         display:grid;
         grid-template-columns: 1fr;
-        width:90%;
-        margin:auto;
-        background-color:black;
         z-index: 5;
-        padding:0 5% 0 5%;
+        box-sizing: border-box;
+        padding: 0 6vw 0 6vw;
     }
-    .box{
-        display:inline-grid;
-        width: 100%;
-        height:80vw;
+
+    .koreantitle{
+        width: 100vw;
+        height:24vw;
+        padding: 0 6vw 0 6vw;
+        border-left: 1px dashed #444;
+        box-sizing: border-box;
+        position:relative;
+        display:inline-block;
+        white-space:normal;
+        overflow-y:hidden;
+        padding:1.2em;
         background-color:black;
     }
-    .letter-box{
-        height: 80vw;
+
+    .box{
+        width: 84vw;
+        height: 84vw;
     }
-    .alphabet{
-        height:16vw;
+
+    .captionbox{
+        width: 84vw;
+        padding: 1.2em 0 1.2em 0;
     }
-    .letter-box, .alphabet{
-        display:flex;
-        width: 80vw;
-    }
+
 }
