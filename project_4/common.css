@@ -12,7 +12,10 @@ img{
 video{
     width:100%;
 }
-
+#icon{
+    width: 4em;
+    margin-right: 1.2em;
+}
  /* LINKS */
 a{
     text-decoration: none; 
