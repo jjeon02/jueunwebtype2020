@@ -40,6 +40,36 @@ h3{
     color:black;
 }
 
+.input{
+    width:100%;
+    height: 4em;
+    background-color:#222;
+    outline:none;
+    color:white;
+    font-family: "pixelVarious";
+    font-size: calc(4.8em + 1.2vw);
+    line-height:1.2;
+    letter-spacing: 0.05em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    margin:0;
+    text-align:center;
+    animation: fontwiggle 2s infinite;
+}
+
+@keyframes fontwiggle{
+    0%{
+        font-weight: 100;
+    }
+    50%{
+        font-weight: 900;
+    }
+    100%{
+        font-weight: 100;
+    }
+}
+
 .timer{
     color:white;
     font-weight: 100;
