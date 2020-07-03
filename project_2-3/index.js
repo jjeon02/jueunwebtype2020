@@ -1,6 +1,6 @@
 
 window.onload = function(){
-    countUp("Jan 1, 1894 24:00:00",'timer');
+    countUp("Jan 1, 1894 23:10:09",'timer');
     countUp("Jan 1, 1898 14:50:11", 'timer2');
     countUp("Oct 4, 1902 03:16:13", 'timer3');
     countUp("Sep 28, 1951 05:17:24" , 'timer4');
