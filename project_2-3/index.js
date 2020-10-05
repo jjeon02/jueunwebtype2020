@@ -1,4 +1,3 @@
-
 window.onload = function(){
     countUp("Jan 1, 1894 23:10:09",'timer1');
     countUp("Jan 1, 1898 14:50:11", 'timer2');
