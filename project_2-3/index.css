@@ -1,5 +1,4 @@
-body{
-    background-color:black;
+body{background-color:black;
 }
 
 body::-webkit-scrollbar {
@@ -289,10 +288,8 @@ form{
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;s
 }
-
-
 
 /* RESPONSIVE */
 
